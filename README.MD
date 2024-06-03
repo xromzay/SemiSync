@@ -2,7 +2,7 @@ Shitty utill for syncing your folder via github repo
 
 How to use:
 1) Download files from release
-2) Run "Start Install.cmd"
+2) Run "Start Install.cmd" in desired directory
 3) To upload changes to github run git_push.ps1
 4) To update your folder from github run git_pull.ps1
 5) To uninstall run "uninstall.ps1"
