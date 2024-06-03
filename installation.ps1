@@ -1,1 +1,0 @@
-winget install Git.git
