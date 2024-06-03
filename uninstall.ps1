@@ -20,7 +20,7 @@ function RemoveJobs
 	}
 	else 
 	{
-		continue
+		
 	}
 }
 
@@ -29,19 +29,21 @@ function RemoveTools
 	Remove-Item .\git_pull.ps1
 	Remove-Item .\git_push.ps1
 	Remove-Item .\uninstall.ps1
-	Remove-Item .\$HiddenDir\*
+	Remove-Item .\$HiddenDir -recurse -force -confirm:$false
+	Remove-Item .\.git -recurse -force -confirm:$false
 }
 
 function AccessApproval
 {
-	echo @'Are you sure you want to proceed?
+	echo @'
+Are you sure you want to proceed?
 Yes - Y
 No - any key
 '@
-	$ApprovalVar = read-host "input: "
+	$ApprovalVar = read-host "input"
 	if ($ApprovalVar -eq "Y")
 	{
-		continue
+		
 	}
 	else
 	{
@@ -60,7 +62,7 @@ R - repo (remove just repo)
 All user files will stay untouched!
 anything other - quit
 '@ 
-$UninstallType = read-host "Select: "
+$UninstallType = read-host "Select"
 
 if ($UninstallType -eq "F") # -or ($UninstallType = 'f')
 {
