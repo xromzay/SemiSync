@@ -1,11 +1,12 @@
 Shitty utill for syncing your folder via github repo
 
 How to use:
-1) Download files from release
-2) Run "Start Install.cmd" in desired directory
-3) To upload changes to github run "git_push.ps1"
-4) To update your folder from github run "git_pull.ps1"
-5) To uninstall run "uninstall.ps1"
+1) Download archive from release
+2) Unpack all files to desired directory
+3) Run "Start Install.cmd" to begin the installation process
+4) Run "git_push.ps1" to upload changes to github
+5) Run "git_pull.ps1" to update your folder from github 
+6) Run "uninstall.ps1" to uninstall 
 
 What does script do?:
 - enables execution policy for .ps1 files
